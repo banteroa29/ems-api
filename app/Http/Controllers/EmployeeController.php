@@ -77,8 +77,8 @@ class EmployeeController extends Controller
     {
         return response()->json([
             'employee' => new EmployeeResource($employee),
-            'job_information' => new JobInformationResource($employee->jobInformation),
-            'personal_information' => new PersonalInformationResource($employee->personalInformation),
+            'job_information' => ($employee->jobInformation == null ? null : new JobInformationResource($employee->jobInformation)),
+            'personal_information' =>($employee->personalInformation == null ? null : new PersonalInformationResource($employee->personalInformation)) ,
             'education' => EducationResource::collection($employee->education),
             'work_experience' => WorkExperienceResource::collection($employee->workExperience),
             'emergency_contact' => ($employee->emergencyContact == null ?
@@ -106,7 +106,7 @@ class EmployeeController extends Controller
      */
     public function destroy(Employee $employee)
     {
-        //
+        return Employee::destroy($employee->id);
     }
     
     private function saveEmployee(Request $request) {
