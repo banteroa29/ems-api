@@ -18,6 +18,7 @@ class CreateDesignationsTable extends Migration
             $table->unsignedBigInteger('department_id');
             $table->string('name',255);
             $table->string('description')->nullable();
+            $table->boolean('is_active')->default(1);
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('department_id')->references('id')->on('departments');

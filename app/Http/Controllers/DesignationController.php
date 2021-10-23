@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Designation;
 use Illuminate\Http\Request;
+use App\Http\Resources\DesignationResource;
 
 class DesignationController extends Controller
 {
@@ -14,7 +15,7 @@ class DesignationController extends Controller
      */
     public function index()
     {
-        //
+        return DesignationResource::collection(Designation::all());
     }
 
     /**

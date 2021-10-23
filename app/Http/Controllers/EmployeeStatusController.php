@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\EmployeeStatus;
 use Illuminate\Http\Request;
+use App\Http\Resources\EmployeeStatusResource;
 
 class EmployeeStatusController extends Controller
 {
@@ -14,7 +15,7 @@ class EmployeeStatusController extends Controller
      */
     public function index()
     {
-        //
+        return EmployeeStatusResource::collection(EmployeeStatus::all());
     }
 
     /**

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\EmployeeType;
 use Illuminate\Http\Request;
+use App\Http\Resources\EmployeeTypeResource;
 
 class EmployeeTypeController extends Controller
 {
@@ -14,7 +15,7 @@ class EmployeeTypeController extends Controller
      */
     public function index()
     {
-        //
+        return EmployeeTypeResource::collection(EmployeeType::all());
     }
 
     /**

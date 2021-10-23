@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\DesignationController;
+use App\Http\Controllers\EmployeeTypeController;
+use App\Http\Controllers\EmployeeStatusController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,7 +24,10 @@ Route::post('/register',[AuthController::class,'register']);
 Route::post('/login',[AuthController::class,'login']);
 
 Route::apiResource('employees', EmployeeController::class);
-
+Route::apiResource('departments', DepartmentController::class);
+Route::apiResource('designations', DesignationController::class);
+Route::apiResource('employee-types', EmployeeTypeController::class);
+Route::apiResource('employee-statuses', EmployeeStatusController::class);
 
 Route::group(['middleware' => ['auth:sanctum']], function() {
     Route::apiResource('user', UserController::class);

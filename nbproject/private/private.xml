@@ -4,13 +4,18 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/ems-api/app/Models/Designation.php</file>
-            <file>file:/C:/xampp/htdocs/ems-api/app/Http/Resources/EducationResource.php</file>
-            <file>file:/C:/xampp/htdocs/ems-api/app/Http/Resources/WorkExperienceResource.php</file>
-            <file>file:/C:/xampp/htdocs/ems-api/app/Http/Resources/EmergencyContactResource.php</file>
+            <file>file:/C:/xampp/htdocs/ems-api/database/factories/EmployeeFactory.php</file>
+            <file>file:/C:/xampp/htdocs/ems-api/database/seeders/DatabaseSeeder.php</file>
+            <file>file:/C:/xampp/htdocs/ems-api/app/Http/Resources/JobInformationResource.php</file>
             <file>file:/C:/xampp/htdocs/ems-api/app/Http/Controllers/EmployeeController.php</file>
             <file>file:/C:/xampp/htdocs/ems-api/app/Http/Resources/EmployeeResource.php</file>
+            <file>file:/C:/xampp/htdocs/ems-api/app/Http/Resources/DepartmentResource.php</file>
             <file>file:/C:/xampp/htdocs/ems-api/app/Models/EmployeeInformation.php</file>
+            <file>file:/C:/xampp/htdocs/ems-api/app/Http/Controllers/DepartmentController.php</file>
             <file>file:/C:/xampp/htdocs/ems-api/app/Models/Employee.php</file>
+            <file>file:/C:/xampp/htdocs/ems-api/app/Models/Department.php</file>
+            <file>file:/C:/xampp/htdocs/ems-api/database/factories/EmployeeInformationFactory.php</file>
+            <file>file:/C:/xampp/htdocs/ems-api/database/seeders/EmployeeSeeder.php</file>
         </group>
     </open-files>
 </project-private>
